@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Arima:wght@100..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Cutive&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Fascinate+Inline&family=Jaro:opsz@6..72&family=Noto+Sans+Mono:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sriracha&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.login{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+.hiddenlogin{
+    display: none;
+}
+
+.visiblelogin{
+    display: block;
+}
+
+.login-container{
+    border: 2px solid black;
+    border: none;
+    width: 500px;
+    height: auto;
+    box-shadow:  0 0 20px aqua,0 0 20px aqua;
+    padding: 15px 25px;
+}
+
+.loginheading-container{
+    text-align: center;
+    font-size: 20px;
+}
+.loginheading-container > h2{
+    text-transform: uppercase;
+    text-shadow:  0 0 20px white,0 0 20px white;
+    letter-spacing: 5px;
+}
+.login-input > label{
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-shadow:  0 0 2px aqua,0 0 20px aqua;
+}
+
+.login-input{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.login-input > input{
+    border-radius: 8px;
+    padding: 5px;
+    border: none;
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-shadow:  0 0 2px aqua,0 0 20px aqua;
+    
+}
+
+.login-input > input:hover{
+    box-shadow:  0 0 2px aqua,0 0 20px aqua;
+}
+
+.login-btn > button{
+    
+    border-radius: 8px;
+    border: none;
+    font-family: "Alata", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 28px;
+    text-shadow:  0 0 2px aqua,0 0 20px aqua;
+    background-color: rgb(55, 116, 116);
+    transition: 0.5s ease;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    letter-spacing: 5px;
+    
+}
+
+.login-btn > button:hover{
+    background-color: aqua;
+    text-shadow:  0 0 20px black,0 0 20px black;
+    color: black;
+}

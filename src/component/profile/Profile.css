@@ -1,0 +1,138 @@
+/* Profile Image */
+.profileimg-container img {
+    height: 350px;
+    width: 500px;
+    object-fit: cover;
+}
+
+/* Profile Section */
+.profile {
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Profile Container */
+.profile-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Detail Container */
+.detail-container {
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.detail-container h3 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.detail-container p {
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 25px white, 0 0 25px white;
+    cursor: pointer;
+    animation: panime 1s ease-in-out infinite;
+}
+
+@keyframes panime {
+    0% {
+        transform: scale(1.1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* Mobile and Tablet Responsive */
+@media screen and (max-width: 1200px) {
+    .profile-container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        
+    }
+
+    .profileimg-container img {
+        height: 300px;
+        width: 400px;
+    }
+
+    .detail-container h3 {
+        font-size: 24px;
+    }
+
+    .detail-container p {
+        font-size: 16px;
+    }
+}
+
+/* Small Screens (Phones) */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .profileimg-container img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .detail-container h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .detail-container p {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+}
+
+/* Extra Small Screens (Phones in Portrait Mode) */
+@media screen and (max-width: 480px) {
+    .profile-container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .profileimg-container img {
+        height: 200px;
+        width: 300px;
+    }
+
+    .detail-container h3 {
+        font-size: 18px;
+    }
+
+    .detail-container p {
+        font-size: 14px;
+    }
+}

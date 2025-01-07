@@ -1,0 +1,103 @@
+/* About Flex Container */
+.aboutsection{
+    margin-top: 30px;
+}
+.aboutflex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    width: 100%;
+    max-width: 1200px;
+    height: 500px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+    box-shadow: 0 0 20px white, 0 0 25px white;
+}
+
+/* About Heading */
+.aboutheading-container h2 {
+    padding: 10px 25px;
+    border-radius: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* About Text Container */
+.abouttext-container p {
+    font-family: "Alata", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    padding: 20px;
+    max-width: 600px;
+    text-indent: 25px;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 2px white, 0 0 25px white;
+    line-height: 1.6;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Mobile and Tablet Responsive */
+@media screen and (max-width: 1024px) {
+    .aboutflex-container {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+    }
+
+    .aboutimg-container img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .abouttext-container p {
+        font-size: 0.95rem;
+        padding: 15px;
+    }
+}
+
+/* Small Screens (Phones) */
+@media screen and (max-width: 768px) {
+    .aboutflex-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .aboutimg-container img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .abouttext-container p {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
+
+/* Extra Small Screens (Phones in Portrait Mode) */
+@media screen and (max-width: 480px) {
+    .aboutflex-container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .aboutimg-container img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .abouttext-container p {
+        font-size: 0.85rem;
+        padding: 12px;
+    }
+}
