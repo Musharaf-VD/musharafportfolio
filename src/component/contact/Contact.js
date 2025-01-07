@@ -20,8 +20,8 @@ const Contact = () => {
 
     const handleclick = (e) =>{
         e.preventDefault();
+       
     }
-
 
     return (
         <Element id='contact'>
@@ -43,9 +43,10 @@ const Contact = () => {
                                     onChange={handlechange}
                                 />
                             </div>
+                            
 
                             <div className='input-email'>
-                                <lable>Email</lable>
+                                <label>Email</label>
                                 <input type="email"
                                     name='email'
                                     onChange={handlechange}
