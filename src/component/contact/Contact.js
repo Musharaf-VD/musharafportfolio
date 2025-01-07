@@ -19,8 +19,17 @@ const Contact = () => {
     }
 
     const handleclick = (e) =>{
-        e.preventDefault();
+        e.preventDefault();  
        
+    }
+
+    const handlemessage = () =>{
+        alert(input.username)
+        setInput({
+            username:"",
+            email:"",
+            mblno:"",
+        })
     }
 
     return (
@@ -39,8 +48,9 @@ const Contact = () => {
                             <div className='input-name'>
                                 <label>Name</label>
                                 <input type='text'
-                                    name='name'
+                                    name='username'
                                     onChange={handlechange}
+                                    value={input.username}
                                 />
                             </div>
                             
@@ -50,6 +60,7 @@ const Contact = () => {
                                 <input type="email"
                                     name='email'
                                     onChange={handlechange}
+                                    value={input.email}
                                 />
                             </div>
 
@@ -58,14 +69,16 @@ const Contact = () => {
                                 <input type='text'
                                     name='mblno'
                                     onChange={handlechange}
+                                    value={input.mblno}
                                 />
                             </div>
 
                             <div className='submit-button'>
-                                <button className='btn col-12' onSubmit={handleclick}>submit</button>
+                                <button className='btn col-12' onSubmit={handleclick} onClick={handlemessage}>submit</button>
                             </div>
 
                         </div>
+                        <h3 >Do you want to talk to me? ..just click this</h3>
                     
                     <div className='socialmedia-container1'>
                         <a href='https://www.instagram.com/fara__hsum?igsh=M3FtZzc3ajQ1NWVz&utm_source=ig_contact_invite' target='_blank' rel='noopener noreferrer'><FaInstagram /></a>

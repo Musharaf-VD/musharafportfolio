@@ -36,7 +36,7 @@ const Project = () => {
           {projects.project.map((projectsep,index)=>(
             <div className='project' key={index}>
             <h3>{projectsep.projectname}</h3>
-            <img src={projectsep.img} alt={`${projectsep.projectname} image`} className='mx-5'/>
+            <img src={projectsep.img} alt={`${projectsep.projectname}`} className='mx-5'/>
             <p >{projectsep.para}</p>
             <a href='https://github.com/Musharaf-VD' target='_blank'rel='noopener noreferrer' ><button className='btn col-12'>view to github</button></a>
           </div>

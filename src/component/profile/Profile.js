@@ -14,7 +14,7 @@ const Profile = () => {
                     </div>
 
                     <div className='profileimg-container'>
-                        <img src={profileimg} />
+                        <img src={profileimg} alt='my profile'/>
                     </div>
                 </div>
             </section>

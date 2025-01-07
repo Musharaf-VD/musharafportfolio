@@ -1,5 +1,3 @@
-
-import { useState } from 'react';
 import './App.css';
 import About from './component/about/About';
 import Contact from './component/contact/Contact';

@@ -76,7 +76,7 @@
 }
 
 .contactform-container input {
-  width: 500px;
+  width: 100%;
   padding: 12px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -134,6 +134,10 @@
   /* Allow icons to wrap on smaller screens */
   width: 100%;
   /* Ensure the container is full width */
+}
+h3{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: justify;
 }
 
 .socialmedia-container1 a {
